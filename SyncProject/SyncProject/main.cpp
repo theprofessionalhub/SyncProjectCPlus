@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "SyncProject.h"
+#include <SyncProject.hpp>
 using namespace std;
 using namespace SyncFileAPINameSpace;
 

@@ -14,7 +14,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
          endingLineNumber = "26"
-         landmarkName = "SyncFile::fileExists(string *filePath)"
+         landmarkName = "SyncFile::fileExists(string &amp;filePath)"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

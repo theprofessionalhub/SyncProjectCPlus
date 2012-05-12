@@ -32,7 +32,7 @@
 		6A4A652A155DF94900C78D9C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6A4A652C155DF94900C78D9C /* SyncProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SyncProject.1; sourceTree = "<group>"; };
 		6A4A6533155DFC8000C78D9C /* SyncFileAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyncFileAPI.cpp; sourceTree = "<group>"; };
-		6A4A6535155E16FD00C78D9C /* SyncProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncProject.h; sourceTree = "<group>"; };
+		6A4A6535155E16FD00C78D9C /* SyncProject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SyncProject.hpp; sourceTree = "<group>"; };
 		6A94F370155EE6D500E1F96A /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = ../../../../../../opt/local/lib/libboost_filesystem.dylib; sourceTree = "<group>"; };
 		6A94F372155EEA8800E1F96A /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../opt/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 				6A4A652A155DF94900C78D9C /* main.cpp */,
 				6A4A6533155DFC8000C78D9C /* SyncFileAPI.cpp */,
 				6A4A652C155DF94900C78D9C /* SyncProject.1 */,
-				6A4A6535155E16FD00C78D9C /* SyncProject.h */,
+				6A4A6535155E16FD00C78D9C /* SyncProject.hpp */,
 			);
 			path = SyncProject;
 			sourceTree = "<group>";

@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "SyncProject.h"
+#include <SyncProject.hpp>
 #include <fstream>
 #include <boost/filesystem.hpp>
 using namespace boost::filesystem;
@@ -18,7 +18,7 @@ namespace fs = boost::filesystem;
 
 namespace SyncFileAPINameSpace 
 {
-    //File Exists
+    
     bool SyncFile::fileExists(string &filePath)
     {
         bool tempBool = false;
@@ -43,11 +43,11 @@ namespace SyncFileAPINameSpace
             {
                 if(fs::is_directory(*pIt))
                 {
-                    cout << "Dir  : " << fs::basename(*pIt) << endl;
+                    cout << "Dir  : " << fs::absolute(*pIt) << endl;
                 }
                 else
                 {
-                    cout << "File : " << fs::basename(*pIt) << endl;                    
+                    cout << "File : " << fs::absolute(*pIt) << endl;                    
                 }
                     ret++;
             }
