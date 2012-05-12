@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A4A652B155DF94900C78D9C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A652A155DF94900C78D9C /* main.cpp */; };
 		6A4A652D155DF94900C78D9C /* SyncProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6A4A652C155DF94900C78D9C /* SyncProject.1 */; };
+		6A4A6534155DFC8000C78D9C /* SyncFileAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A6533155DFC8000C78D9C /* SyncFileAPI.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		6A4A6526155DF94900C78D9C /* SyncProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SyncProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4A652A155DF94900C78D9C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6A4A652C155DF94900C78D9C /* SyncProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SyncProject.1; sourceTree = "<group>"; };
+		6A4A6533155DFC8000C78D9C /* SyncFileAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyncFileAPI.cpp; sourceTree = "<group>"; };
+		6A4A6535155E16FD00C78D9C /* SyncProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncProject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				6A4A652A155DF94900C78D9C /* main.cpp */,
+				6A4A6533155DFC8000C78D9C /* SyncFileAPI.cpp */,
 				6A4A652C155DF94900C78D9C /* SyncProject.1 */,
+				6A4A6535155E16FD00C78D9C /* SyncProject.h */,
 			);
 			path = SyncProject;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4A652B155DF94900C78D9C /* main.cpp in Sources */,
+				6A4A6534155DFC8000C78D9C /* SyncFileAPI.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
