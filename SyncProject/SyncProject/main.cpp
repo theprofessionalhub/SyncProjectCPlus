@@ -8,15 +8,19 @@
 
 #include <iostream>
 #include "SyncProject.h"
-
 using namespace std;
+
+
 
 int main (int argc, const char * argv[])
 {
     using namespace SyncFileAPINameSpace;
     // insert code here...
     SyncFile test;
-    test.fileIsThere();
+    if(test.fileIsThere())
+    {
+        cout << "Finally it is true, isnt it?" << endl;
+    }
     cout << "Hello, World!\n";
     return 0;
 }

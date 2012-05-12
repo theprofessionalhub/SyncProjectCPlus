@@ -8,15 +8,23 @@
 
 #include <iostream>
 #include "SyncProject.h"
+#include <fstream>
+#include <boost/filesystem.hpp>
+using namespace boost::filesystem;
 using namespace std;
 
 
 namespace SyncFileAPINameSpace {
     
-    extern bool SyncFile::fileIsThere()
+    bool SyncFile::fileIsThere()
     {
-        cout << "Testing if this" << endl;
-        return true;
+        bool tempBool = false;
+ 
+        if(boost::filesystem::exists("/Users/MacArjun/Documents/ProgProjects/SyncProjectCPlus/SyncProject/SyncProject/test.txt"))
+        {
+            tempBool = true;
+        }
+        return tempBool;
     }
 }
 
