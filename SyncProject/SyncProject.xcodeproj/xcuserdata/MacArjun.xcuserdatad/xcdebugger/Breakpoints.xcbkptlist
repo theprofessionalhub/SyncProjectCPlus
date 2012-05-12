@@ -9,12 +9,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SyncProject/SyncFileAPI.cpp"
-         timestampString = "358542292.138867"
+         timestampString = "358544470.995421"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
-         landmarkName = "SyncFile::fileIsThere()"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "SyncFile::fileExists(string *filePath)"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

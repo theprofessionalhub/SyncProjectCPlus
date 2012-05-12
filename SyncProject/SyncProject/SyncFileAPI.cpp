@@ -13,18 +13,47 @@
 using namespace boost::filesystem;
 using namespace std;
 
+namespace fs = boost::filesystem;
 
-namespace SyncFileAPINameSpace {
-    
-    bool SyncFile::fileIsThere()
+
+namespace SyncFileAPINameSpace 
+{
+    //File Exists
+    bool SyncFile::fileExists(string &filePath)
     {
         bool tempBool = false;
  
-        if(boost::filesystem::exists("/Users/MacArjun/Documents/ProgProjects/SyncProjectCPlus/SyncProject/SyncProject/test.txt"))
+        if(fs::exists(filePath))
         {
             tempBool = true;
         }
         return tempBool;
+    }
+    
+    //File count for Dir
+    int SyncFile::fileCount(string &dirPath)
+    {
+        int ret = 0;
+        if(fileExists(dirPath) && fs::is_directory(dirPath))
+        {
+            vector<fs::path> pathV;
+            fs::path path(dirPath);
+            copy(directory_iterator(path),directory_iterator(), back_inserter(pathV));
+            for(vector<fs::path>::const_iterator pIt = pathV.begin();pIt != pathV.end();++pIt)
+            {
+                if(fs::is_directory(*pIt))
+                {
+                    cout << "Dir  : " << fs::basename(*pIt) << endl;
+                }
+                else
+                {
+                    cout << "File : " << fs::basename(*pIt) << endl;                    
+                }
+                    ret++;
+            }
+        }
+            
+        return ret;
     }
 }
 

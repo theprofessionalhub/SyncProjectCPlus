@@ -8,7 +8,8 @@
 
 #ifndef SyncProject_SyncProject_h
 #define SyncProject_SyncProject_h
-
+#include <iostream.h>
+using namespace std;
 
 namespace SyncFileAPINameSpace {
     
@@ -17,7 +18,8 @@ namespace SyncFileAPINameSpace {
     private:
         
     public:
-        bool fileIsThere();
+        bool fileExists(string &filePath);
+        int fileCount(string &dirPath);
     };
 }
 

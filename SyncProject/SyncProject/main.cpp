@@ -9,19 +9,27 @@
 #include <iostream>
 #include "SyncProject.h"
 using namespace std;
-
+using namespace SyncFileAPINameSpace;
 
 
 int main (int argc, const char * argv[])
 {
-    using namespace SyncFileAPINameSpace;
-    // insert code here...
-    SyncFile test;
-    if(test.fileIsThere())
+    SyncFile fileOperation;
+    string filePath;
+    filePath = "/Users/MacArjun/Documents/ProgProjects/SyncProjectCPlus/SyncProject/SyncProject/test.txt";
+    if(fileOperation.fileExists(filePath))
     {
-        cout << "Finally it is true, isnt it?" << endl;
+        cout << "File : \"" << filePath << "\" exists" << endl;
     }
-    cout << "Hello, World!\n";
+    
+    filePath = "/Users/MacArjun/Downloads/Music";
+    int fCount = fileOperation.fileCount(filePath);
+    if(fCount != -1)
+    {
+        cout << "Numer of files in dir is : " << fCount << endl;
+    }
+    
+    
     return 0;
 }
 
